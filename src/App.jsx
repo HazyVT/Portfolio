@@ -11,9 +11,9 @@ function App() {
         <div className='navbar'>
           <a><GiStarSattelites className='logo-icon' /></a>
           <div className='nav-icon-container'>
-            <a><AiOutlineGithub className='navbar-icon' /></a>
-            <a><AiOutlineTwitter className='navbar-icon'/></a>
-            <a><AiFillYoutube className='navbar-icon'/></a>
+            <a><AiOutlineGithub className='navbar-icon' onClick={() => {window.location.href='https://github.com/hazyvt'}} /></a>
+            <a><AiOutlineTwitter className='navbar-icon' onClick={() => {window.location.href='https://twitter.com/hazyvt'}}/></a>
+            <a><AiFillYoutube className='navbar-icon' onClick={() => {window.location.href='https://www.youtube.com/channel/UC0S1cmn-MBXUeUAwdmXQGEA'}}/></a>
           </div>
         </div>
         <div className='mid-content'>
