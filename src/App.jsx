@@ -33,7 +33,7 @@ function App() {
               for you to feast your eyes on
             </p>
             <div className='project-container'>
-              <div className='project' onClick={() => {window.location.href='https://github.com/HazyVT/Shinedle'}}>
+              <div className='project' onClick={() => {window.location.href='https://shinedle.mosalim.site'}}>
                 <img src='./shinedle.png' />
                 <p>Shinedle is a daily shiny hunting minigame
                   webapp for pokemon.
@@ -44,7 +44,7 @@ function App() {
                   <SiChakraui className='icon'/>
                 </div>
               </div>
-              <div className='project' onClick={() => {window.location.href='https://github.com/HazyVT/gamelist'}}>
+              <div className='project' onClick={() => {window.location.href='https://gdb.mosalim.site'}}>
                 <img src='./gamedb.png' />
                 <p>GameDB is a webapp for storing and scoring games
                   you've played.
