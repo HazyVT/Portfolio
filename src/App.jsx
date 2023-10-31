@@ -1,7 +1,8 @@
 import './App.sass'
 import { AiOutlineTwitter, AiOutlineGithub, AiFillYoutube } from 'react-icons/ai'
 import { GiStarSattelites } from 'react-icons/gi'
-import { SiChakraui, SiSupabase, SiNodedotjs, SiReact } from 'react-icons/si'
+import { SiChakraui, SiSupabase, SiNodedotjs, SiReact, SiR } from 'react-icons/si'
+import { BsStars, BsBookFill } from 'react-icons/bs'
 
 function App() {
 
@@ -18,14 +19,14 @@ function App() {
         </div>
         <div className='mid-content'>
           <div className='hero'>
-            <h1>Hazy<span>Rain</span></h1>
-            <p>Good Programming, Bad Ideas</p>
+            <h1>Mohammed <span>Salim</span></h1>
+            <p>Experienced Web Developer</p>
           </div>
           <div className='about-me'>
             <img src='./kitty1.jpeg' />
             <p>My name is Mohammed Salim. I am 22 years old 
               studying software enginnering. 
-              I love animal crossing, cats and coding my really bad ideas. </p>
+              I love animal crossing, cats and coding my ideas. </p>
           </div>
           <div className='portfolio'>
             <h1>Portfolio</h1>
@@ -33,23 +34,21 @@ function App() {
               for you to feast your eyes on
             </p>
             <div className='project-container'>
-              <div className='project' onClick={() => {window.location.href='https://shinedle.mosalim.site'}}>
-                <img src='./shinedle.png' />
-                <p>Shinedle is a daily shiny hunting minigame
-                  webapp for pokemon.
-                </p>
-                <div className='tech-icon-container'>
-                  <SiNodedotjs className='icon'/>
-                  <SiReact className='icon'/>
-                  <SiChakraui className='icon'/>
+              <div className='project' onClick={() => {window.open("https://shinedle.mosalim.site", "_blank")}}>
+                <BsStars />
+                <h4>Shinedle</h4>
+                <p>A web app that gives you a random pokemon to shiny hunt daily.</p>
+                <div className='project-tech'>
+                  <SiNodedotjs />
+                  <SiReact />
+                  <SiChakraui />
                 </div>
               </div>
-              <div className='project' onClick={() => {window.location.href='https://gdb.mosalim.site'}}>
-                <img src='./gamedb.png' />
-                <p>GameDB is a webapp for storing and scoring games
-                  you've played.
-                </p>
-                <div className='tech-icon-container'>
+              <div className='project' onClick={() => {window.open("https://branch.mosalim.site", "_blank")}}>
+                <BsBookFill />
+                <h4>Branch</h4>
+                <p>A web app made to allow students to study distraction free.</p>
+                <div className='project-tech'>
                   <SiNodedotjs />
                   <SiReact />
                   <SiChakraui />

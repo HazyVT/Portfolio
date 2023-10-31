@@ -36,30 +36,27 @@ body
     .project-container
       padding-bottom: 40pt
 
+      :hover
+        cursor: pointer
+
       .project
         display: flex
-        flex-direction: column
         align-items: center
-        margin-top: 40pt
+        width: 400pt
+        justify-content: space-between
+        margin: 20pt
+        padding: 10pt
+        border: 1px solid white
+        border-radius: 20px
 
-        :hover
-          cursor: pointer
-
-        .tech-icon-container
-          margin-top: 10pt
+        .project-tech
+          width: 80pt
           display: flex
-          width: 50%
           justify-content: space-around
 
+        span
+          font-weight: 800
 
-          .icon
-            width: 20pt
-            height: 20pt
-
-        img
-          width: 200pt
-          border-radius: 20pt
-          margin-bottom: 10pt
 
   .mid-content
     display: flex
