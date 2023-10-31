@@ -1,7 +1,7 @@
 import './App.sass'
 import { AiOutlineTwitter, AiOutlineGithub, AiFillYoutube } from 'react-icons/ai'
 import { GiStarSattelites } from 'react-icons/gi'
-import { SiChakraui, SiSupabase, SiNodedotjs, SiReact, SiR } from 'react-icons/si'
+import { SiChakraui, SiSupabase, SiNodedotjs, SiReact } from 'react-icons/si'
 import { BsStars, BsBookFill } from 'react-icons/bs'
 
 function App() {
