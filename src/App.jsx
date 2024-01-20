@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Navigation onDesktop={onDesktop}/>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home onDesktop={onDesktop}/>} />
           <Route path='/portfolio' element={<Portfolio onDesktop={onDesktop}/>} />
         </Routes>
       </Router>
