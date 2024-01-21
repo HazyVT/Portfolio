@@ -9,7 +9,7 @@ export default function Portfolio({onDesktop}) {
   function Shinedle() {
     return (
       <Box w={onDesktop ? '30vw' : '70vw'}>
-        <Box display='flex' alignItems='center' cursor={"pointer"} _hover={{color: 'green.300'}} onClick={() => {window.location = "https://shinedle.mosalim.site"}}>
+        <Box display='flex' w='fit-content' alignItems='center' cursor={"pointer"} _hover={{color: 'green.300'}} onClick={() => {window.location = "https://shinedle.mosalim.site"}}>
           <Icon as={WiStars} w={12} h={12} />
           <Heading size='lg'>Shinedle</Heading>
         </Box>

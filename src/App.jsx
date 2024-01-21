@@ -9,7 +9,7 @@ function App() {
   const [ onDesktop ] = useMediaQuery('(min-width: 600px)');
 
   return (
-    <Box userSelect={'none'} minW='100vw' minH='100vh'>
+    <Box userSelect={'none'} minW='100vw' minH='100vh' bgColor='#fffff4'>
       <Router>
         <Navigation onDesktop={onDesktop}/>
         <Routes>
