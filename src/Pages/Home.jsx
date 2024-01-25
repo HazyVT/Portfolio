@@ -16,12 +16,15 @@ export default function Home({onDesktop}) {
         <Box marginTop={4} w={onDesktop ? '30%' : '60%'}>
           <Text textAlign='left' marginTop={2}>
             My name is Mohammed Salim. I am a 22 year old programmer with an interest in game development and web development.
-            I have experience with both personal projects and professional projects. Both of which can be found in my <Text as='span' color='red.300' cursor={"pointer"} onClick={() => {nav('/portfolio')}}>portfolio</Text>.
+            I have experience with both personal projects and professional projects. Both of which can be found in my <Text as='span' color='red.300' cursor={"pointer"} _hover={{color: 'red.400'}} onClick={() => {nav('/portfolio')}}>portfolio</Text>.
           </Text>
           <Text marginTop={2} textAlign='left'>
             I am an avid gamer and enjoy very casual games such as Animal Crossing, Minecraft and Pokemon. I always enjoyed
             single player games a lot more than multiplayer games. I also really love cats.
-          </Text>        
+          </Text>  
+          <Box textAlign='center' marginTop={8}>
+            <Text>Last seen working on: <Text as='span' color='red.300'>Branch</Text></Text>
+          </Box>      
           <Button onClick={() => {nav('/portfolio')}} marginTop={8} bgColor={'red.300'} color='white' _hover={{bgColor: 'red.400'}}>My Portfolio<Icon marginLeft={2} as={HiArrowRight}/></Button>
         </Box>
         <Text marginTop={8} w={onDesktop ? '30%' : '60%'} textAlign='left'>
