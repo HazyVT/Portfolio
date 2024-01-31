@@ -35,7 +35,7 @@ export default function Navigation({onDesktop}) {
       <Heading cursor={"pointer"} _hover={{color: 'red.300'}} onClick={() => {nav('/')}}>HVT</Heading>
       <Box display={onDesktop ? 'flex' : 'none'} w={'12vw'} justifyContent={'space-around'}>
         <Text cursor={"pointer"} _hover={{color: 'red.300'}} onClick={() => {nav('/portfolio')}}>Portfolio</Text>
-        <Text cursor={"pointer"} _hover={{color: 'red.300'}} onClick={() => {nav('/posts')}}>Posts</Text>
+        <Text cursor={"pointer"} _hover={{color: 'red.300'}} onClick={() => {window.location = "/Resume.pdf"}}>Resume</Text>
       </Box>
       <MobileNav />
     </Box>
