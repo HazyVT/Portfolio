@@ -12,7 +12,7 @@ export default function Home({onDesktop}) {
     <ScaleFade initialScale={0.9} in={true}>
       <Box display='flex' flexDir='column' alignItems='center' textAlign='center' marginTop={4}>
         <Heading size={onDesktop ? '3xl' : 'xl'}>Mohammed <Heading size={onDesktop ? '3xl' : 'xl'} as='span' color='red.300'>Salim</Heading></Heading>
-        <Text fontSize={onDesktop ? 24 : 14} marginTop={2}>Web Developer / Game Programmer</Text>
+        <Text fontSize={onDesktop ? 24 : 14} marginTop={2}>Software Engineer</Text>
         <Box marginTop={4} w={onDesktop ? '30%' : '60%'}>
           <Text textAlign='left' marginTop={2}>
             My name is Mohammed Salim. I am a 22 year old programmer with an interest in game development and web development.
