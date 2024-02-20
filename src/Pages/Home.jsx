@@ -15,7 +15,7 @@ export default function Home({onDesktop}) {
         <Text fontSize={onDesktop ? 24 : 14} marginTop={2}>Software Engineer</Text>
         <Box marginTop={4} w={onDesktop ? '30%' : '60%'}>
           <Text textAlign='left' marginTop={2}>
-            My name is Mohammed Salim. I am a 22 year old programmer with an interest in game development and web development.
+            My name is Mohammed Salim. I am a 23 year old programmer with an interest in game development and web development.
             I have experience with both personal projects and professional projects. Both of which can be found in my <Text as='span' color='red.300' cursor={"pointer"} _hover={{color: 'red.400'}} onClick={() => {nav('/portfolio')}}>portfolio</Text>.
           </Text>
           <Text marginTop={2} textAlign='left'>
@@ -23,8 +23,8 @@ export default function Home({onDesktop}) {
             single player games a lot more than multiplayer games. I also really love cats.
           </Text>  
           <Box textAlign='center' marginTop={8}>
-            <Text>Last seen working on: <Text as='span' color='red.300' cursor={"pointer"} _hover={{color: 'red.500'}} onClick={() => {window.location = "https://github.com/HazyVT/BunGLFW"}}>BunGLFW</Text></Text>
-          </Box>      
+            <Text>Last seen working on: <Text as='span' color='red.300' cursor={"pointer"} _hover={{color: 'red.500'}} onClick={() => {window.location = "https://github.com/HazyVT/Palette"}}>Palette</Text></Text>
+          </Box>
           <Button onClick={() => {nav('/portfolio')}} marginTop={8} bgColor={'red.300'} color='white' _hover={{bgColor: 'red.400'}}>My Portfolio<Icon marginLeft={2} as={HiArrowRight}/></Button>
         </Box>
         <Text marginTop={8} w={onDesktop ? '30%' : '60%'} textAlign='left'>

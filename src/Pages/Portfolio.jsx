@@ -1,6 +1,8 @@
 import { Box, Heading, Icon, ScaleFade, Text } from "@chakra-ui/react";
 import { WiStars } from "react-icons/wi";
 import { RiWindowFill } from "react-icons/ri";
+import { IoColorPaletteSharp } from "react-icons/io5";
+
 
 import PropTypes from 'prop-types';
 
@@ -36,6 +38,21 @@ export default function Portfolio({onDesktop}) {
     )
   }
 
+  function Palette() {
+    return (
+      <Box w={onDesktop ? '30vw' : '70vw'} marginTop={20}>
+        <Box display='flex' w='fit-content' alignItems='center' cursor={"pointer"} _hover={{color: 'teal.300'}} onClick={() => {window.location = "https://github.com/HazyVT/Palette"}}>
+          <Icon as={IoColorPaletteSharp} w={7} h={7} marginTop={1} marginRight={2}/>
+          <Heading size='lg'>Palette</Heading>
+        </Box>
+        <Text marginTop={2}>
+          Palette is a web app designed to allow you to quickly generate color palettes on real component designs to find a nice color palette for
+          your next web application project.
+        </Text>
+      </Box>
+    )
+  }
+
   return (
     <ScaleFade initialScale={0.9} in={true}>
       <Box display='flex' flexDir='column' alignItems='center' marginTop={4}>
@@ -43,6 +60,7 @@ export default function Portfolio({onDesktop}) {
         <Box marginTop={4}>
           <Shinedle />
           <BunGLFW />
+          <Palette />
         </Box>
       </Box>
     </ScaleFade>
