@@ -11,7 +11,7 @@ export default function Portfolio({onDesktop}) {
   function Shinedle() {
     return (
       <Box w={onDesktop ? '30vw' : '70vw'} marginTop={6}>
-        <Box display='flex' w='fit-content' alignItems='center' cursor={"pointer"} _hover={{color: 'green.300'}} onClick={() => {window.location = "https://shinedle.mosalim.site"}}>
+        <Box display='flex' w='fit-content' alignItems='center' cursor={"pointer"} _hover={{color: 'green.300'}} onClick={() => {window.location = "https://shinedle.hazyvt.com"}}>
           <Icon as={WiStars} w={12} h={12} />
           <Heading size='lg'>Shinedle</Heading>
         </Box>
@@ -41,7 +41,7 @@ export default function Portfolio({onDesktop}) {
   function Palette() {
     return (
       <Box w={onDesktop ? '30vw' : '70vw'} marginTop={20}>
-        <Box display='flex' w='fit-content' alignItems='center' cursor={"pointer"} _hover={{color: 'teal.300'}} onClick={() => {window.location = "https://github.com/HazyVT/Palette"}}>
+        <Box display='flex' w='fit-content' alignItems='center' cursor={"pointer"} _hover={{color: 'teal.300'}} onClick={() => {window.location = "https://palette.hazyvt.com"}}>
           <Icon as={IoColorPaletteSharp} w={7} h={7} marginTop={1} marginRight={2}/>
           <Heading size='lg'>Palette</Heading>
         </Box>
