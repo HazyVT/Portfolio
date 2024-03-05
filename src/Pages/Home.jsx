@@ -23,7 +23,7 @@ export default function Home({onDesktop}) {
             single player games a lot more than multiplayer games. I also really love cats.
           </Text>  
           <Box textAlign='center' marginTop={8}>
-            <Text>Last seen working on: <Text as='span' color='red.300' cursor={"pointer"} _hover={{color: 'red.500'}} onClick={() => {window.location = "https://github.com/HazyVT/Wave"}}>Wave</Text></Text>
+            <Text>Last seen working on: <Text as='span' color='red.300' cursor={"pointer"} _hover={{color: 'red.500'}} onClick={() => {window.location = "https://github.com/HazyVT/Slipher"}}>Slipher</Text></Text>
           </Box>
           <Button onClick={() => {nav('/portfolio')}} marginTop={8} bgColor={'red.300'} color='white' _hover={{bgColor: 'red.400'}}>My Portfolio<Icon marginLeft={2} as={HiArrowRight}/></Button>
         </Box>

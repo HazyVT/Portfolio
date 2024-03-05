@@ -2,6 +2,8 @@ import { Box, Heading, Icon, ScaleFade, Text } from "@chakra-ui/react";
 import { WiStars } from "react-icons/wi";
 import { RiWindowFill } from "react-icons/ri";
 import { IoColorPaletteSharp } from "react-icons/io5";
+import { FaD, FaDragon } from "react-icons/fa6";
+
 
 
 import PropTypes from 'prop-types';
@@ -10,7 +12,7 @@ export default function Portfolio({onDesktop}) {
 
   function Shinedle() {
     return (
-      <Box w={onDesktop ? '30vw' : '70vw'} marginTop={6}>
+      <Box w={onDesktop ? '30vw' : '70vw'} marginTop={20}>
         <Box display='flex' w='fit-content' alignItems='center' cursor={"pointer"} _hover={{color: 'green.300'}} onClick={() => {window.location = "https://shinedle.hazyvt.com"}}>
           <Icon as={WiStars} w={12} h={12} />
           <Heading size='lg'>Shinedle</Heading>
@@ -18,6 +20,21 @@ export default function Portfolio({onDesktop}) {
         <Text marginTop={2}>
           Shinedle is a daily shiny hunting minigame website for Pokemon. Shinedle is made using react and local storage
           to lock out users for the day. Along with that, I also strived to get a perfect lighthouse score and was able to get it done.
+        </Text>
+      </Box>
+    )
+  }
+
+  function Slipher() {
+    return (
+      <Box w={onDesktop ? '30vw' : '70vw'} marginTop={6}>
+        <Box display='flex' w='fit-content' alignItems='center' cursor={"pointer"} _hover={{color: 'red.300'}} onClick={() => {window.location = "https://github.com/hazyvt/slipher"}}>
+          <Icon as={FaDragon} w={6} h={6} marginRight={2} />
+          <Heading size='lg'>Slipher</Heading>
+        </Box>
+        <Text marginTop={2}>
+          A full game framework made for typescript using bun and SDL2. Exports to a native desktop application
+          without the need for electron or any other dependancy and allows for full use of all typescript functions.
         </Text>
       </Box>
     )
@@ -58,6 +75,7 @@ export default function Portfolio({onDesktop}) {
       <Box display='flex' flexDir='column' alignItems='center' marginTop={4}>
         <Heading size={onDesktop ? '3xl' : 'xl'}>Portfolio</Heading>
         <Box marginTop={4}>
+          <Slipher />
           <Shinedle />
           <BunGLFW />
           <Palette />
