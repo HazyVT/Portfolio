@@ -2,7 +2,6 @@ import { Box, useMediaQuery } from "@chakra-ui/react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navigation from "./Navigation"
 import Home from "./Pages/Home"
-import Portfolio from "./Pages/Portfolio"
 
 function App() {
 
@@ -14,7 +13,6 @@ function App() {
         <Navigation onDesktop={onDesktop}/>
         <Routes>
           <Route path='/' element={<Home onDesktop={onDesktop}/>} />
-          <Route path='/portfolio' element={<Portfolio onDesktop={onDesktop}/>} />
         </Routes>
       </Router>
     </Box>
