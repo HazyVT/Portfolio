@@ -36,7 +36,7 @@ export default function Home({onDesktop}) {
         <Box marginTop={24} ref={portRef}>
           <Heading size='xl'>Portfolio</Heading>
           <Box display={onDesktop ? 'flex' : 'block'}>
-            <Box cursor={'pointer'} marginTop={24} marginLeft={12} w={80} display='flex' flexDir='column' alignItems='center' onClick={() => {window.location = "https://sleepyowlstudios.itch.io/one-day"}}>
+            <Box cursor={'pointer'} marginTop={24} marginLeft={12} w={onDesktop ? 60 : 80} display='flex' flexDir='column' alignItems='center' onClick={() => {window.location = "https://sleepyowlstudios.itch.io/one-day"}}>
               <Image src={"OneDayThumbnail.png"} w={48} />
               <Text marginTop={4} textAlign={'left'}>
                 One Day is a rougelike twin stick survival game made by me and my friends at sleepy owl studios made enitrely in Godot.
@@ -44,7 +44,7 @@ export default function Home({onDesktop}) {
                 One Day also has an official release on both windows and mac.
               </Text>
             </Box>
-            <Box cursor={'pointer'} marginTop={24} marginLeft={12} w={80} display='flex' flexDir='column' alignItems='center' onClick={() => {window.location = "https://github.com/hazyvt/bunglfw"}}>
+            <Box cursor={'pointer'} marginTop={24} marginLeft={12} w={onDesktop ? 60 : 80} display='flex' flexDir='column' alignItems='center' onClick={() => {window.location = "https://github.com/hazyvt/bunglfw"}}>
               <Image src={"bunwordmark.svg"} w={24}/>
               <Image src={"glfwicon.png"} w={24} />
               <Text marginTop={4} textAlign={'left'}>
