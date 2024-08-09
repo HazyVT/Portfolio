@@ -33,9 +33,9 @@ export default function Home({onDesktop}) {
           <Icon as={FaTwitter} w={6} h={6} cursor={"pointer"} onClick={() => {window.location = "https://twitter.com/hazyvt"}}/>
           <Icon as={FaLinkedin} w={6} h={6} cursor={"pointer"} onClick={() => {window.location = "https://www.linkedin.com/in/mohammed-almakhmari-0a3534227/"}}/>
         </Box>
-        <Box marginTop={24} ref={portRef}>
+        <Box marginTop={24} ref={portRef} display='flex' flexDir={'column'}>
           <Heading size='xl'>Portfolio</Heading>
-          <Box display={onDesktop ? 'flex' : 'block'}>
+          <Box display={onDesktop ? 'flex' : 'block'} w='fit-content' marginRight={8}>
             <Box cursor={'pointer'} marginTop={24} marginLeft={12} w={onDesktop ? 80 : 60} display='flex' flexDir='column' alignItems='center' onClick={() => {window.location = "https://sleepyowlstudios.itch.io/one-day"}}>
               <Image src={"OneDayThumbnail.png"} w={48} />
               <Text marginTop={4} textAlign={'left'}>
