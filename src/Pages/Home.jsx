@@ -1,4 +1,4 @@
-import { Box, Heading, Icon, ScaleFade, Text } from "@chakra-ui/react";
+import { Box, Heading, Icon, Image, ScaleFade, Text } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import PropTypes from 'prop-types';
 import { useRef } from "react";
@@ -35,6 +35,24 @@ export default function Home({onDesktop}) {
         </Box>
         <Box marginTop={24} ref={portRef}>
           <Heading size='xl'>Portfolio</Heading>
+          <Box display={onDesktop ? 'flex' : 'block'}>
+            <Box cursor={'pointer'} marginTop={24} marginLeft={12} w={80} display='flex' flexDir='column' alignItems='center' onClick={() => {window.location = "https://sleepyowlstudios.itch.io/one-day"}}>
+              <Image src={"OneDayThumbnail.png"} w={48} />
+              <Text marginTop={4} textAlign={'left'}>
+                One Day is a rougelike twin stick survival game made by me and my friends at sleepy owl studios made enitrely in Godot.
+                It was made in a single day and contains RNG elements along with simple and fun gameplay.
+                One Day also has an official release on both windows and mac.
+              </Text>
+            </Box>
+            <Box cursor={'pointer'} marginTop={24} marginLeft={12} w={80} display='flex' flexDir='column' alignItems='center' onClick={() => {window.location = "https://github.com/hazyvt/bunglfw"}}>
+              <Image src={"bunwordmark.svg"} w={24}/>
+              <Image src={"glfwicon.png"} w={24} />
+              <Text marginTop={4} textAlign={'left'}>
+                BunGLFW is a typescript library made for the bun runtime that gives you access to GLFW bindings for typescript.
+                This allows for native desktop applications to be written in typescript without the need for electron.
+              </Text>
+            </Box>
+          </Box>          
         </Box>
       </Box>
     </ScaleFade>
