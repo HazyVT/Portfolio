@@ -22,7 +22,7 @@ export default function Home({onDesktop}) {
             single player games a lot more than multiplayer games. I also really love cats.
           </Text>  
           <Box textAlign='center' marginTop={8}>
-            <Text>Last seen working on: <Text as='span' color='red.300' cursor={"pointer"} _hover={{color: 'red.500'}} onClick={() => {window.location = "https://github.com/HazyVT/Slipher"}}>Slipher</Text></Text>
+            <Text>Last seen working on: <Text as='span' color='red.300' cursor={"pointer"} _hover={{color: 'red.500'}} onClick={() => {window.location = "https://github.com/HazyVT/Slifer"}}>Slifer</Text></Text>
           </Box>
         </Box>
         <Text marginTop={8} w={onDesktop ? '30%' : '60%'} textAlign='left'>
@@ -52,7 +52,14 @@ export default function Home({onDesktop}) {
                 This allows for native desktop applications to be written in typescript without the need for electron.
               </Text>
             </Box>
-          </Box>          
+          </Box>  
+          <Box cursor={'pointer'} marginTop={24} marginLeft={12} w={onDesktop ? 80 : 60} display='flex' flexDir='column' alignItems='center' onClick={() => {window.location = "https://github.com/hazyvt/bunglfw"}}>
+            <Image src={"Slifer.png"} w={48}/>
+            <Text marginTop={4} textAlign={'left'}>
+            Slifer is a game framework made to allow users to code games in typescript. 
+            The framework uses bun and SDL2 under the hood to allow your game to render and build natively to desktop.
+            </Text>
+          </Box>        
         </Box>
       </Box>
     </ScaleFade>
