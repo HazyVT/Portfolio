@@ -53,7 +53,7 @@ export default function Home({onDesktop}) {
               </Text>
             </Box>
           </Box>  
-          <Box cursor={'pointer'} marginTop={24} marginLeft={12} w={onDesktop ? 80 : 60} display='flex' flexDir='column' alignItems='center' onClick={() => {window.location = "https://github.com/hazyvt/bunglfw"}}>
+          <Box cursor={'pointer'} marginTop={24} marginLeft={12} w={onDesktop ? 80 : 60} display='flex' flexDir='column' alignItems='center' onClick={() => {window.location = "https://slifer.hazyvt.com"}}>
             <Image src={"Slifer.png"} w={48}/>
             <Text marginTop={4} textAlign={'left'}>
             Slifer is a game framework made to allow users to code games in typescript. 
