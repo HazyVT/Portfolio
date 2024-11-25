@@ -22,14 +22,8 @@ export default function Navigation({onDesktop}) {
   
   return (
     <Box display='flex' justifyContent='space-between' alignItems='center' padding={4}>
-      <Heading cursor={"pointer"} _hover={{color: 'primary.main'}} onClick={() => {nav('/')}}>HVT</Heading>
-      <Box display={onDesktop ? 'flex' : 'none'} justifyContent={'space-around'}>
-        <Spacing />
-        <Text textDecor={'underline'} cursor={"pointer"} _hover={{color: 'primary.main'}} onClick={() => {window.location = "/Resume.pdf"}}>Resume</Text><Spacing />
-        <Text textDecor={'underline'} cursor={"pointer"} _hover={{color: 'primary.main'}} onClick={''}>Blog</Text><Spacing />
-        <Text textDecor={'underline'} cursor={"pointer"} _hover={{color: 'primary.main'}} onClick={() => {window.location = "https://github.com/hazyvt"}}>Github</Text><Spacing />
-      </Box>
-      <Box display={onDesktop ? 'none' : 'block'}>
+      <Heading size='md' cursor={"pointer"} _hover={{color: 'primary.main'}} onClick={() => {nav('/')}}>HVT</Heading>
+      <Box>
         <Button ref={btnref} onClick={onOpen} colorScheme="">
           <Icon as={HiOutlineMenuAlt3} w={6} h={6} />
         </Button>
@@ -39,8 +33,8 @@ export default function Navigation({onDesktop}) {
             <DrawerCloseButton />
             <DrawerBody marginTop={24} display='flex' flexDir={'column'} alignItems={'center'} fontSize={24} fontWeight={600} textDecor={'underline'}>
               <Text cursor='pointer' _hover={{color: 'primary.main'}} onClick={() => {window.location = "/Resume.pdf"}} margin={4}>Resume</Text>
-              <Text cursor='pointer' _hover={{color: 'primary.main'}} onClick={''} margin={4}>Blog</Text>
               <Text cursor='pointer' _hover={{color: 'primary.main'}} onClick={() => {window.location = 'https://github.com/hazyvt'}} margin={4}>Github</Text>
+              <Text cursor='pointer' _hover={{color: 'primary.main'}} onClick={() => {window.location = 'https://twitter.com/hazyvt'}} margin={4}>Twitter</Text>
             </DrawerBody>
           </DrawerContent>
 
