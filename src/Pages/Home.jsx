@@ -20,7 +20,7 @@ export default function Home({onDesktop}) {
           <Text>Programmer | Developer</Text>
         </Box>
       </Center>
-      <Text marginTop={12} fontWeight={600} fontSize={20}>About Me</Text>
+      <Text marginTop={12} fontWeight={600} fontSize={20} color='accent.main'>About Me</Text>
       <Center>
         <Text marginTop={2} textAlign={'left'} fontSize={onDesktop ? 16 : 14}>
           I am a programmer, game developer and beginner artist.
@@ -29,7 +29,7 @@ export default function Home({onDesktop}) {
           I love singleplayer games such as Pokemon, Monster Hunter and Factorio.
         </Text>
       </Center>
-      <Text marginTop={12} fontWeight={600} fontSize={20}>My Works</Text>
+      <Text marginTop={12} fontWeight={600} fontSize={20} color='accent.main'>My Works</Text>
     </ScaleFade>
     </Box>
 
