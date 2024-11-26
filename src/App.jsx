@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navigation from "./Navigation"
 import Home from "./Pages/Home"
 import Bobazilla from "./Pages/Bobazilla";
+import Slifer from "./Pages/Slifer";
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
         <Navigation onDesktop={onDesktop}/>
         <Routes>
           <Route path='/' element={<Home onDesktop={onDesktop} />} />
-          <Route path='/work/bobazilla' element={<Bobazilla />} />
+          <Route path='/work/bobazilla' element={<Bobazilla onDesktop={onDesktop}/>} />
+          <Route path='/work/slifer' element={<Slifer onDesktop={onDesktop} />} />
         </Routes>
       </Router>
       </Box>

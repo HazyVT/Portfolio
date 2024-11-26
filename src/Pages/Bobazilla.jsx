@@ -15,7 +15,7 @@ export default function Bobazilla({onDesktop}) {
                         <Text fontSize={14}>August 20, 2024</Text>
                         <Text fontSize={24} fontWeight={600} marginTop={2}>Bobazilla - GMTK 2024 Game Jam</Text>
                         <Box marginTop={2}>
-                            <Icon as={FaItchIo} onClick={() => window.location = "https://sleepyowlstudios.itch.io/bobazilla"} cursor="pointer" _hover={{color: 'primary.main'}} />
+                            <Icon as={FaItchIo} onClick={() => window.location = "https://sleepyowlstudios.itch.io/bobazilla"} cursor="pointer" _hover={{color: 'primary.main'}} transition={'0.3s ease'} />
                         </Box>
                     </Box>
                 </header>
