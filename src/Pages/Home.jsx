@@ -1,4 +1,4 @@
-import { Box, Center, ScaleFade, Text, Image, Flex, Wrap, WrapItem } from "@chakra-ui/react";
+import { Box, Center, ScaleFade, Text, Image } from "@chakra-ui/react";
 import PropTypes from 'prop-types';
 import { useNavigate } from "react-router-dom";
 
