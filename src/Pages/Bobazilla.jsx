@@ -46,9 +46,7 @@ export default function Bobazilla({onDesktop}) {
                         </ListItem>
                         <ListItem marginTop={2}>
                             A rougelike top down shooter where you change your size to dodge obstacles and enemies. This idea
-                            did not make it due to us just having created a game earlier called 
-                            <span style={{color: "#a7ccd1", textDecoration: 'underline', cursor: 'pointer'}} onClick={() => nav('/work/oneday')}>One Day</span>
-                            that was a rougelike top down shooter and we did not want to make the same game twice.
+                            did not make it due to us just having created a game earlier called <Text as={'span'} style={{color: "#a7ccd1", textDecoration: 'underline', cursor: 'pointer'}} onClick={() => nav('/work/oneday')}>One Day</Text> that was a rougelike top down shooter and we did not want to make the same game twice.
                         </ListItem>
                     </UnorderedList>
                     <Text fontSize={24} fontWeight={600} marginTop={8}>The Development Phase</Text>
