@@ -32,7 +32,7 @@ export default function Home({onDesktop}) {
       <Text marginTop={12} fontWeight={600} fontSize={20} color='accent.main' textDecor={'underline'}>My Programming Works</Text>
       <Box w="40vw" display={onDesktop ? 'block' : 'none'}>
       <Center marginTop={4}>
-        <Image borderRadius={'8px'} cursor={"pointer"} src="/slifer.png" w={onDesktop ? '100%' : '100%'} onClick={() => nav('/work/slifer')}/>
+        <Image borderRadius={'8px'} cursor={"pointer"} src="/Slifer.png" w={onDesktop ? '100%' : '100%'} onClick={() => nav('/work/slifer')}/>
         <Image borderRadius={'8px'} cursor={"pointer"} src="/bobazilla.png" w={onDesktop ? '100%' : '50%'} marginLeft={4} onClick={() => nav('/work/bobazilla')}/>
         <Image borderRadius={'8px'} cursor={"pointer"} src="/oneday.png" w={onDesktop ? '100%' : '50%'} marginLeft={4} onClick={() => nav('/work/oneday')} />
       </Center>
