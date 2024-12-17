@@ -5,6 +5,7 @@ import Home from "./Pages/Home"
 import Bobazilla from "./Pages/Bobazilla";
 import Slifer from "./Pages/Slifer";
 import OneDay from "./Pages/OneDay";
+import LadyLuck from "./Pages/LadyLuck";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/work/bobazilla' element={<Bobazilla onDesktop={onDesktop}/>} />
           <Route path='/work/slifer' element={<Slifer onDesktop={onDesktop} />} />
           <Route path='/work/oneday' element={<OneDay onDesktop={onDesktop} />} />
+          <Route path='/work/ladyluck' element={<LadyLuck onDesktop={onDesktop} />} />
         </Routes>
       </Router>
       </Box>

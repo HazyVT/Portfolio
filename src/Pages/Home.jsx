@@ -37,7 +37,7 @@ export default function Home({onDesktop}) {
         <Image borderRadius={'8px'} cursor={"pointer"} src="/oneday.png" w={onDesktop ? '100%' : '50%'} marginLeft={4} onClick={() => nav('/work/oneday')} />
       </Center>
       <Center marginTop={2}>
-        <Image borderRadius={'8px'} cursor={"pointer"} src="/ladyluck.png" w={onDesktop ? '100%' : '50%'} />
+        <Image borderRadius={'8px'} cursor={"pointer"} src="/ladyluck.png" w={onDesktop ? '100%' : '50%'} onClick={() => nav('/work/ladyluck')} />
         <Image opacity={0} borderRadius={'8px'} src="/ladyluck.png" w={onDesktop ? '100%' : '50%'} marginLeft={4}/>
         <Image opacity={0} borderRadius={'8px'} src="/ladyluck.png" w={onDesktop ? '100%' : '50%'} marginLeft={4}/>
       </Center>
@@ -49,7 +49,7 @@ export default function Home({onDesktop}) {
       </Center>
       <Center marginTop={2}>
         <Image borderRadius={'8px'} cursor={"pointer"} src="/oneday.png" w={onDesktop ? '100%' : '50%'} marginLeft={4} onClick={() => nav('/work/oneday')}/>
-        <Image borderRadius={'8px'} cursor={"pointer"} src="/ladyluck.png" w={onDesktop ? '100%' : '50%'} />
+        <Image borderRadius={'8px'} cursor={"pointer"} src="/ladyluck.png" w={onDesktop ? '100%' : '50%'} onClick={() => nav('/work/ladyluck')}/>
       </Center>
       </Box>
     </ScaleFade>

@@ -9,7 +9,7 @@ export default function OneDay({onDesktop}) {
             <section>
                 <header>
                     <Box>
-                        <Text fontSize={14}>August 20, 2024</Text>
+                        <Text fontSize={14}>July 29, 2024</Text>
                         <Text fontSize={24} fontWeight={600} marginTop={2}>One Day</Text>
                         <Box marginTop={2}>
                             <Icon as={FaItchIo} onClick={() => window.location = "https://sleepyowlstudios.itch.io/one-day"} cursor="pointer" _hover={{color: 'primary.main'}} transition={'0.3s ease'} />
