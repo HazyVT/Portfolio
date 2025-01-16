@@ -44,7 +44,7 @@ export default function Home({onDesktop}) {
       </Box>
       <Box w="80vw" display={onDesktop ? 'none' : 'block'}>
       <Center marginTop={4}>
-        <Image borderRadius={'8px'} cursor={"pointer"} src="/slifer.png" w={onDesktop ? '100%' : '50%'} onClick={() => nav('/work/slifer')}/>
+        <Image borderRadius={'8px'} cursor={"pointer"} src="/Slifer.png" w={onDesktop ? '100%' : '50%'} onClick={() => nav('/work/slifer')}/>
         <Image borderRadius={'8px'} cursor={"pointer"} src="/bobazilla.png" w={onDesktop ? '100%' : '50%'} marginLeft={4} onClick={() => nav('/work/bobazilla')}/>
       </Center>
       <Center marginTop={2}>
