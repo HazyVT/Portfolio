@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 $bg0: #282828;
 $bg1: #3c3836;
 $fg1: #ebdbb2;
 $fg0: #fbf1c7;
+$green: #b8bb26;
+$purple: #d3869b;
+$blue: #83a598;
+$red: #fb4934;
 
 * {
 	margin: 0;
@@ -11,7 +16,7 @@ $fg0: #fbf1c7;
 }
 
 html {
-	font-family: "Cabin", serif;
+	font-family: "Noto Sans", serif;
 
 	body {
 		background-color: $bg0;
@@ -32,9 +37,15 @@ html {
 		justify-content: space-between;
 		position: fixed;
 		top: 0;
-		width: 60vw;
-		padding: 3vh;
+		width: 20rem;
+		padding: 2vh;
 		background-color: $bg0;
+
+		.nav-link {
+			font-weight: 800;
+
+			
+		}
 
 		.nav-link:hover {
 			cursor: pointer;
@@ -43,11 +54,66 @@ html {
 	}
 
 	.home-container {
-		width: 60vw;
+		width: 30rem;
 		margin-top: 6vh;
 
-		h1 {
-			margin-top: 4vh;
+		.welcome {
+			margin-top: 2vh;
+			font-family: "DM Mono", serif;
+			font-size: 1.5rem;
+			cursor: default;
+		}
+
+		img {
+			width: 10rem;
+		}
+
+		h3 {
+			line-height: 1.875rem;
+		}
+
+		.tag-container {
+
+			cursor: default;
+
+
+			.tag0 {
+				color: $green;
+			}
+
+			.tag1 {
+				color: $blue;
+			} 
+
+			.tag2 {
+				color: $purple;
+			}
+		}
+
+		.about-me {
+
+			.text {
+				 margin-top: 1vh;
+				p {
+					margin-bottom: 2vh;
+					text-align: left;
+					line-height: 1.5rem;
+					font-weight: 300;
+				}
+						
+			}
+
+			
+			.heading {
+				font-size: 1.25rem;
+				margin-top: 3rem;
+				font-weight: 500;
+			}
+
+			a {
+				color: $red;
+				text-decoration: none;
+			}
 		}
 			
 	}
