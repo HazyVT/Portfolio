@@ -70,7 +70,11 @@ function GameLog() {
                                 </Heading>
                                 <Text>Rating: {review.rating} / 5</Text>
                             </Box>
-                            <Image src={review.image} w="8vh" />
+                            <Image
+                                src={review.image}
+                                w="8vh"
+                                borderRadius="4px"
+                            />
                         </Box>
                     );
                 })}
@@ -80,9 +84,16 @@ function GameLog() {
                     display="flex"
                     justifyContent="space-around"
                     marginTop={12}
+                    w="30rem"
                 >
-                    <Text>Total Games Played: {log.total}</Text>
-                    <Text>Games In Backlog: {log.backlog}</Text>
+                    <Text wordBreak="break-word" textAlign="center">
+                        Total Games Played:{" "}
+                        <Heading as="span">{log.total}</Heading>
+                    </Text>
+                    <Text wordBreak="break-word" textAlign="center">
+                        Games In Backlog:{" "}
+                        <Heading as="span">{log.backlog}</Heading>
+                    </Text>
                 </Box>
             ) : (
                 ""

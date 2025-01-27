@@ -1,7 +1,7 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 
 function Works() {
-    return <Box></Box>;
+    return <Box marginTop={14}></Box>;
 }
 
 export default Works;
