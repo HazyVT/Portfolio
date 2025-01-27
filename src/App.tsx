@@ -2,6 +2,7 @@ import { Box, Heading, Center } from "@chakra-ui/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./router/Home";
 import Navbar from "./components/Navbar";
+import Works from "./router/Works";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
                     <Navbar />
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/works" element={<Works />} />
                     </Routes>
                 </Center>
             </Router>

@@ -15,7 +15,6 @@ function Home() {
                 h={6}
                 cursor="pointer"
                 _hover={{ color: "#fbf1c7" }}
-                marginLeft={8}
             ></Icon>
         );
     }
@@ -30,7 +29,7 @@ function Home() {
 
     return (
         <Box
-            maxW="60vw"
+            minW="80vw"
             minH="100vh"
             display="flex"
             flexDir="column"
@@ -68,7 +67,7 @@ function Home() {
                 I have worked on a lot of games with my friends, all of which
                 can be found on our teams{" "}
                 <Text
-                    color="#FB4934"
+                    color="#FE8019"
                     as="a"
                     href="https://sleepyowlstudios.itch.io"
                 >
@@ -76,8 +75,15 @@ function Home() {
                 </Text>
                 .
             </Text>
+            <Heading marginTop={8}>Gaming Journal</Heading>
             <GameLog />
-            <Box marginTop={8}>
+            <Box
+                display="flex"
+                w="10vh"
+                justifyContent="space-between"
+                marginTop={8}
+                paddingBottom={12}
+            >
                 <IconLink icon={BsGithub} route="https://github.com/hazyvt" />
                 <IconLink
                     icon={FaItchIo}

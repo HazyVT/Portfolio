@@ -19,13 +19,13 @@ function Navbar() {
 
     return (
         <Box
-            w="40vw"
+            w="20rem"
             pos="fixed"
             top="0"
             display="flex"
-            justifyContent="space-around"
+            justifyContent="space-between"
             backgroundColor="#282828"
-            padding={2}
+            paddingTop={4}
         >
             <NavLink text="Home" route="/" />
             <NavLink text="Blog" route="/blog" />
