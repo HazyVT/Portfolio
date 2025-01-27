@@ -1,37 +1,20 @@
-import { Box, Text } from "@chakra-ui/react";
-import { MdMenu } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
-    const nav = useNavigate();
 
-    function NavLink(props: { text: string; route: string }) {
-        return (
-            <Text
-                _hover={{ color: "#fbf1c7" }}
-                onClick={() => nav(props.route)}
-                cursor="pointer"
-            >
-                {props.text}
-            </Text>
-        );
-    }
+	const nav = useNavigate();
 
-    return (
-        <Box
-            w="20rem"
-            pos="fixed"
-            top="0"
-            display="flex"
-            justifyContent="space-between"
-            backgroundColor="#282828"
-            paddingTop={4}
-        >
-            <NavLink text="Home" route="/" />
-            <NavLink text="Blog" route="/blog" />
-            <NavLink text="Works" route="/works" />
-        </Box>
-    );
+	function NavLink(props: {text: string, path: string}) {
+		return <a className="nav-link" onClick={() => nav(props.path)}>{props.text}</a>
+	}
+
+	return (
+		<div className="navbar-container">
+			<NavLink text="HOME" path="/" />
+			<NavLink text="BLOG" path="/blog" />
+			<NavLink text="WORKS" path="/works" />
+		</div>
+	)
 }
 
 export default Navbar;
