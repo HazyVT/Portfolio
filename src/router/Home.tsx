@@ -1,3 +1,5 @@
+import GameLog from '../components/GameLog';
+
 function Home() {
 	return (
 		<div className="home-container">
@@ -31,6 +33,7 @@ function Home() {
 					</p>
 					</div>
 			</div>
+			<GameLog />
 		</div>
 	)
 }
