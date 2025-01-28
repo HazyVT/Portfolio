@@ -2,6 +2,7 @@ import GameLog from "../components/GameLog";
 import Footer from "../components/Footer";
 import PageTitle from "../components/PageTitle";
 
+import { BsGithub } from "react-icons/bs";
 function Home() {
     return (
         <>
@@ -17,6 +18,13 @@ function Home() {
                     {" | "}
                     <span className="tag2">Gamer</span>
                 </p>
+                <div className="icon-container">
+                    <BsGithub
+                        onClick={() =>
+                            (window.location.href = "https://github.com/hazyvt")
+                        }
+                    />
+                </div>
                 <div className="about-me">
                     <h2 className="heading">About Me</h2>
                     <div className="text">

@@ -1,34 +1,49 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+    const nav = useNavigate();
 
-	const nav = useNavigate();
+    function InternalLink(props: { text: string; path: string }) {
+        return (
+            <li className="list-el" onClick={() => nav(props.path)}>
+                {props.text}
+            </li>
+        );
+    }
 
-	function InternalLink(props: {text: string, path: string}) {
-		return <li className="list-el"  onClick={() => nav(props.path)}>{props.text}</li>
-	}
+    function ExternalLink(props: { text: string; path: string }) {
+        return (
+            <li className="list-el">
+                <a href={props.path}>{props.text}</a>
+            </li>
+        );
+    }
 
-	function ExternalLink(props: {text: string, path: string}) {
-		return <li className="list-el"><a href={props.path}>{props.text}</a></li>
-	}
-
-	return <footer>
-		<div>
-			<h4>Site Links</h4>
-			<ul>
-				<InternalLink text="Home" path="/" />
-				<InternalLink text="Blog" path="/blog" />
-				<InternalLink text="Works" path="/works" />
-			</ul>
-		</div>
-		<div>
-			<h4>Find Me</h4>
-			<ul>
-				<ExternalLink text="Github" path="https://github.com/hazyvt" />
-				<ExternalLink text="Backloggd" path="https://backloggd.com/u/Hazorah" />
-			</ul>
-		</div>
-	</footer>
+    return (
+        <footer>
+            <div>
+                <h4>Site Links</h4>
+                <ul>
+                    <InternalLink text="Home" path="/" />
+                    <InternalLink text="Blog" path="/blog" />
+                    <InternalLink text="Works" path="/works" />
+                </ul>
+            </div>
+            <div>
+                <h4>Find Me</h4>
+                <ul>
+                    <ExternalLink
+                        text="Github"
+                        path="https://github.com/hazyvt"
+                    />
+                    <ExternalLink
+                        text="Backloggd"
+                        path="https://backloggd.com/u/Hazorah"
+                    />
+                </ul>
+            </div>
+        </footer>
+    );
 }
 
 export default Footer;

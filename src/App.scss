@@ -60,6 +60,17 @@ html {
         width: 30rem;
         margin-top: 6vh;
 
+        .icon-container {
+            margin-top: 1rem;
+
+            svg {
+                &:hover {
+                    color: $fg0;
+                    cursor: pointer;
+                }
+            }
+        }
+
         .welcome {
             margin-top: 2vh;
             font-family: "DM Mono", serif;
@@ -142,7 +153,7 @@ html {
             display: flex;
             align-items: center;
             margin-bottom: 1rem;
-            min-width: 40vw;
+            min-width: 30vw;
             border: 2px solid $bg1;
             padding: 0.4rem;
             border-radius: 3px;
@@ -193,6 +204,7 @@ html {
 
             .work-item {
                 border: 2px solid $bg1;
+                border-radius: 4px;
                 display: flex;
                 align-items: center;
                 padding: 1rem;
@@ -232,10 +244,20 @@ html {
 
             .list-el {
                 cursor: pointer;
+                color: $fg1;
+                text-decoration: underline dotted;
+
+                &:hover {
+                    color: $fg0;
+                }
 
                 a {
-                    text-decoration: none;
-                    color: $fg0;
+                    color: $fg1;
+                    text-decoration: underline dotted;
+
+                    &:hover {
+                        color: $fg0;
+                    }
                 }
             }
         }
