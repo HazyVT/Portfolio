@@ -46,11 +46,11 @@ function GameLog() {
 			<div className="game-log-inner">
 				{reviews.map((review, index) => {
 					return <div key={index+review.name} className="review-container">
+						<img src={review.image}  />
 						<div className="review-text">
 							<h4>{review.name}</h4>
 							<p>Rating: {review.rating} / 5</p>
 						</div>
-						<img src={review.image}  />
 					</div>
 				})}
 			</div>

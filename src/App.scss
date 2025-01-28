@@ -90,14 +90,16 @@ html {
 		}
 
 		.about-me {
-			text-align: center;
+			text-align: left;
 			display: flex;
 			flex-direction: column;
-			align-items: center;
+
+			h2 {
+				margin-left: 1rem;
+			}
 
 			.text {
-				margin-top: 1vh;
-				padding: 2rem;
+				padding: 1rem;
 
 				p {
 					margin-bottom: 2vh;
@@ -124,36 +126,67 @@ html {
 	}
 
 	.game-log-container {
-		margin-top: 3rem;
+
+		
 
 		.data-container {
 			display: flex;
 			justify-content: space-around;
-			margin-top: 2rem;
+			margin-top: 1rem;
 		}
 
 		.game-log-inner {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			margin-top: 2rem;
+			margin-top: 1rem;
 		}
 
 		.review-container {
 			display: flex;
-			justify-content: space-between;
 			align-items: center;
 			margin-bottom: 1rem;
-			width: 30vh;
+			min-width: 40vw;
+			border: 2px solid $bg1;
+			padding: 0.4rem;
+			border-radius: 3px;
+
+			&:hover {
+				background-color: $bg1;
+			}
 
 			.review-text {
 				text-align: left;
 				width: 10rem;
+				margin-left: 2rem;
 			}
 
 			img {
-				width: 6vh;
+				width: 3rem;
 				border-radius: 4px;
+			}
+		}
+	}
+
+	.works-container {
+		width: 30rem;
+		margin-top: 10vh;
+
+		.header {
+
+			h2 {
+				padding-left: 2rem;
+				padding-right: 2rem;
+			}
+
+			p {
+				margin-top: 2rem;
+				padding-left: 2rem;
+				padding-right: 2rem;
+				text-align: left;
+				line-height: 1.5rem;
+				font-weight: 300;
+
 			}
 		}
 	}
