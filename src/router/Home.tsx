@@ -1,8 +1,9 @@
 import GameLog from "../components/GameLog";
 import Footer from "../components/Footer";
 import PageTitle from "../components/PageTitle";
-
 import { BsGithub } from "react-icons/bs";
+import { FaItchIo } from "react-icons/fa";
+
 function Home() {
     return (
         <>
@@ -10,7 +11,7 @@ function Home() {
             <div className="home-container">
                 <h2 className="welcome">Welcome</h2>
                 <img src="/image.png" />
-                <h3>I am Hazorah.</h3>
+                <h3>I am Hazy.</h3>
                 <p className="tag-container">
                     <span className="tag0">Programmer</span>
                     {" | "}
@@ -22,6 +23,12 @@ function Home() {
                     <BsGithub
                         onClick={() =>
                             (window.location.href = "https://github.com/hazyvt")
+                        }
+                    />
+                    <FaItchIo
+                        onClick={() =>
+                            (window.location.href =
+                                "https://hazyautumnrain.itch.io")
                         }
                     />
                 </div>

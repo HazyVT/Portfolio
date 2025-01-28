@@ -25,7 +25,6 @@ function Footer() {
                 <h4>Site Links</h4>
                 <ul>
                     <InternalLink text="Home" path="/" />
-                    <InternalLink text="Blog" path="/blog" />
                     <InternalLink text="Works" path="/works" />
                 </ul>
             </div>
@@ -35,6 +34,10 @@ function Footer() {
                     <ExternalLink
                         text="Github"
                         path="https://github.com/hazyvt"
+                    />
+                    <ExternalLink
+                        text="ItchIo"
+                        path="https://hazyautumnrain.itch.io"
                     />
                     <ExternalLink
                         text="Backloggd"

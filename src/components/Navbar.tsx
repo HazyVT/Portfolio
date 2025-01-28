@@ -15,7 +15,6 @@ function Navbar() {
         <div className="navbar">
             <div className="navbar-container">
                 <NavLink text="HOME" path="/" />
-                <NavLink text="BLOG" path="/blog" />
                 <NavLink text="WORKS" path="/works" />
             </div>
         </div>

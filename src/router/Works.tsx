@@ -22,7 +22,7 @@ function Works() {
                     <p>
                         This page contains all of my works over the years. If
                         any one of these tickles your fancy, feel free to click
-                        on them to learn more or head over to their github page.
+                        on them to head over to their github page.
                     </p>
                 </div>
                 <div className="works">
