@@ -1,9 +1,6 @@
 import PageTitle from "../components/PageTitle";
-import { useNavigate } from "react-router-dom";
 
 function Works() {
-    const nav = useNavigate();
-
     function WorkItem(props: { image: string; path: string; name: string }) {
         return (
             <div
