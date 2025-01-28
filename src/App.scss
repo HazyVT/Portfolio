@@ -183,6 +183,40 @@ html {
                 font-weight: 300;
             }
         }
+
+        .works {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .work-item {
+                border: 2px solid $bg1;
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                justify-content: space-between;
+                text-align: left;
+                cursor: pointer;
+                margin: 1rem;
+
+                &:hover {
+                    background-color: $bg1;
+                }
+
+                h4 {
+                    width: 10rem;
+                }
+
+                img {
+                    width: 8rem;
+                    border-radius: 2px;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
     }
 
     footer {

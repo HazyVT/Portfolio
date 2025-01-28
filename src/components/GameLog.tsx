@@ -25,11 +25,13 @@ function GameLog() {
         setTotalGames(json.content["Total Games Played"]);
         setBacklog(json.content["Games Backloggd"]);
 
-        const tempArr = [];
-        json.content.recentlyReviewed.forEach((review) => {
-            const rv = new Review(review.name, review.image, review.rating);
-            tempArr.push(rv);
-        });
+        const tempArr: Review[] = [];
+        json.content.recentlyReviewed.forEach(
+            (review: { name: string; image: string; rating: number }) => {
+                const rv = new Review(review.name, review.image, review.rating);
+                tempArr.push(rv);
+            }
+        );
 
         setReviews(tempArr);
     }

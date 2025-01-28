@@ -1,6 +1,21 @@
 import PageTitle from "../components/PageTitle";
+import { useNavigate } from "react-router-dom";
 
 function Works() {
+    const nav = useNavigate();
+
+    function WorkItem(props: { image: string; path: string; name: string }) {
+        return (
+            <div
+                className="work-item"
+                onClick={() => (window.location.href = props.path)}
+            >
+                <img src={props.image} />
+                <h4>{props.name}</h4>
+            </div>
+        );
+    }
+
     return (
         <>
             <PageTitle title="WORKS | Hazorah" />
@@ -13,7 +28,18 @@ function Works() {
                         on them to learn more or head over to their github page.
                     </p>
                 </div>
-                <div className="works"></div>
+                <div className="works">
+                    <WorkItem
+                        image="/slifer-thumbnail.png"
+                        path="https://slifer.hazyvt.com"
+                        name="Slifer Game Framework"
+                    />
+                    <WorkItem
+                        image="/bobazilla-thumbnail.png"
+                        path="https://sleepyowlstudios.itch.io/bobazilla"
+                        name="Bobazilla"
+                    />
+                </div>
             </div>
         </>
     );
