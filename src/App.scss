@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+$bg0: #282828;
+$bg1: #3c3836;
+$fg1: #ebdbb2;
+$fg0: #fbf1c7;
+$green: #b8bb26;
+$purple: #d3869b;
+$blue: #83a598;
+$red: #fb4934;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Noto Sans", serif;
+
+    body {
+        background-color: $bg0;
+        color: $fg1;
+    }
+
+    .page-container {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        padding: 2vh;
+        width: 100vw;
+        background-color: $bg0;
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            width: 20rem;
+
+            .nav-link {
+                font-weight: 800;
+            }
+
+            .nav-link:hover {
+                cursor: pointer;
+                color: $fg0;
+            }
+        }
+    }
+
+    .home-container {
+        width: 30rem;
+        margin-top: 6vh;
+
+        .icon-container {
+            margin-top: 1rem;
+
+            svg {
+                margin-left: 1rem;
+
+                &:hover {
+                    color: $fg0;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .welcome {
+            margin-top: 2vh;
+            font-family: "DM Mono", serif;
+            font-size: 1.5rem;
+            cursor: default;
+        }
+
+        img {
+            width: 10rem;
+        }
+
+        h3 {
+            line-height: 1.875rem;
+        }
+
+        .tag-container {
+            cursor: default;
+
+            .tag0 {
+                color: $green;
+            }
+
+            .tag1 {
+                color: $blue;
+            }
+
+            .tag2 {
+                color: $purple;
+            }
+        }
+
+        .about-me {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                margin-left: 1rem;
+            }
+
+            .text {
+                padding: 1rem;
+
+                p {
+                    margin-bottom: 2vh;
+                    text-align: left;
+                    line-height: 1.5rem;
+                    font-weight: 300;
+                }
+            }
+
+            .heading {
+                font-size: 1.25rem;
+                margin-top: 3rem;
+                font-weight: 500;
+            }
+
+            a {
+                color: $red;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .game-log-container {
+        text-align: left;
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-left: 1rem;
+        }
+
+        .data-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1rem;
+        }
+
+        .game-log-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .review-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            min-width: 25vw;
+            border: 2px solid $bg1;
+            padding: 0.4rem;
+            border-radius: 3px;
+
+            &:hover {
+                background-color: $bg1;
+            }
+
+            .review-text {
+                text-align: left;
+                width: 10rem;
+                margin-left: 2rem;
+            }
+
+            img {
+                width: 3rem;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .works-container {
+        width: 30rem;
+        margin-top: 10vh;
+
+        .header {
+            h2 {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            p {
+                margin-top: 2rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                text-align: left;
+                line-height: 1.5rem;
+                font-weight: 300;
+            }
+        }
+
+        .works {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .work-item {
+                border: 2px solid $bg1;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                justify-content: space-between;
+                text-align: left;
+                cursor: pointer;
+                margin: 1rem;
+
+                &:hover {
+                    background-color: $bg1;
+                }
+
+                h4 {
+                    width: 10rem;
+                }
+
+                img {
+                    width: 8rem;
+                    border-radius: 2px;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    .blog-container {
+        width: 30rem;
+        margin-top: 10vh;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-top: 1px solid $bg1;
+
+        ul {
+            list-style: none;
+
+            .list-el {
+                cursor: pointer;
+                color: $fg1;
+                text-decoration: underline dotted;
+
+                &:hover {
+                    color: $fg0;
+                }
+
+                a {
+                    color: $fg1;
+                    text-decoration: underline dotted;
+
+                    &:hover {
+                        color: $fg0;
+                    }
+                }
+            }
+        }
+    }
+}
