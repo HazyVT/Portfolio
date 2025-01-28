@@ -43,7 +43,7 @@ function GameLog() {
 	return (
 		<div className="game-log-container">
 			<h2>Game Journal</h2>
-			<div>
+			<div className="game-log-inner">
 				{reviews.map((review, index) => {
 					return <div key={index+review.name} className="review-container">
 						<div className="review-text">
