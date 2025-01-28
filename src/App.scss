@@ -21,7 +21,6 @@ html {
 	body {
 		background-color: $bg0;
 		color: $fg1;
-
 	}
 
 	.page-container {
@@ -120,6 +119,7 @@ html {
 
 	.game-log-container {
 		margin-top: 3rem;
+		padding-bottom: 4rem;
 
 		.data-container {
 			display: flex;
@@ -140,8 +140,26 @@ html {
 			}
 
 			img {
-				width: 8vh;
+				width: 6vh;
 				border-radius: 4px;
+			}
+		}
+	}
+
+	footer {
+		display: flex;
+		justify-content: space-around;
+		
+		ul {
+			list-style: none;
+
+			.list-el {
+				cursor: pointer;
+
+				a {
+					text-decoration: none;
+					color: $fg0;
+				}
 			}
 		}
 	}

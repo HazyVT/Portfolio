@@ -1,4 +1,5 @@
 import GameLog from '../components/GameLog';
+import Footer from '../components/Footer';
 
 function Home() {
 	return (
@@ -34,6 +35,7 @@ function Home() {
 					</div>
 			</div>
 			<GameLog />
+			<Footer />
 		</div>
 	)
 }
