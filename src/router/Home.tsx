@@ -10,7 +10,12 @@ function Home() {
             <PageTitle title="HOME | Hazorah" />
             <div className="home-container">
                 <h2 className="welcome">Welcome</h2>
-                <img src="/image.png" />
+                <img
+                    src="/image.png"
+                    alt="hazyvt.com"
+                    width="259"
+                    height="194"
+                />
                 <h3>I am Hazy.</h3>
                 <p className="tag-container">
                     <span className="tag0">Programmer</span>

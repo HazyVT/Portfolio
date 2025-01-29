@@ -81,7 +81,8 @@ html {
         }
 
         img {
-            width: 10rem;
+            transform: scale(0.6);
+            margin: -2rem;
         }
 
         h3 {
@@ -179,8 +180,11 @@ html {
             }
 
             img {
-                width: 3rem;
                 border-radius: 4px;
+                transform: scale(0.4);
+                margin-top: -6rem;
+                margin-bottom: -6rem;
+                margin-left: -4rem;
             }
         }
     }
