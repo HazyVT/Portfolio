@@ -5,7 +5,7 @@ function Navbar() {
 
     function NavLink(props: { text: string; path: string }) {
         return (
-            <a className="nav-link" onClick={() => nav(props.path)}>
+            <a className="nav-link" href="#" onClick={() => nav(props.path)}>
                 {props.text}
             </a>
         );
