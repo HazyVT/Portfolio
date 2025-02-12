@@ -49,7 +49,7 @@ function Home() {
                         <p>
                             I am a software development major working on my own
                             projects on the side when I do not have a job,
-                            commission or game jam to work on. ALl of my
+                            commission or game jam to work on. All of my
                             personal projects can be found on my github page if
                             you would like to see that.
                         </p>
