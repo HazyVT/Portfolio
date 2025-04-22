@@ -1,4 +1,4 @@
-import { AbsoluteCenter, Box, Divider, Skeleton, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import Markdown from 'react-markdown';
 import Post from "../components/blog";
 import { useWindowWidth } from "@react-hook/window-size";
@@ -8,7 +8,7 @@ type blogProps = {
     posts: Post[]
 }
 
-export default function BlogPage({theme, posts} : blogProps) {
+export default function BlogPage({posts} : blogProps) {
 
     const onlyWidth = useWindowWidth();
 
