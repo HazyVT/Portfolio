@@ -32,7 +32,7 @@ export default function Navbar({theme, setTheme} : Props) {
     }
     
     return (
-        <Box pos='fixed' left='0' top='0' w="100vw" display='flex' justifyContent={'space-between'} alignItems={'center'} paddingRight={4}>
+        <Box pos='fixed' bgColor={theme ? 'bg.light' : 'bg.dark'} left='0' top='0' w="100vw" display='flex' justifyContent={'space-between'} alignItems={'center'} paddingRight={4}>
             <Button onClick={themeChangeHandler} colorScheme="">  
                 <Icon color={theme ? '#4c4f69' : '#c6d0f5'} as={theme ? BsMoonFill : BsSunFill} />
             </Button>
