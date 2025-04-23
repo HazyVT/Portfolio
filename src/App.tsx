@@ -6,13 +6,16 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import BlogPage from "./pages/Blog";
 import Post from "./components/blog";
 import { supabase } from "./components/supabase";
+import BlogPost from "./pages/BlogPost";
 
 function App() {
 
     const [isLightTheme, setIsLightTheme ] = useState<boolean>(true);
     const [ posts, setPosts ] = useState<Post[]>([]);
+    const [ loading, setLoading ] = useState<boolean>(false);
 
     async function getBlogPosts() {
+        setLoading(true);
         const { data } = await supabase.from('blogpost').select('id, created_at, content');
         const nPosts: Post[] = [];
         data?.forEach((val) => {
@@ -24,6 +27,7 @@ function App() {
             return b.date.getTime() - a.date.getTime();
         })
         setPosts(nPosts);
+        setLoading(false);
     }
 
 
@@ -51,7 +55,8 @@ function App() {
             <Navbar theme={isLightTheme} setTheme={setIsLightTheme} />
                 <Routes>
                     <Route path="/" element={<HomePage theme={isLightTheme} setTheme={setIsLightTheme} />} />
-                    <Route path="/blog" element={<BlogPage theme={isLightTheme} posts={posts} />} />
+                    <Route path="/blog" element={<BlogPage theme={isLightTheme} posts={posts} loading={loading}/>} />
+                    <Route path='/blog/:id' element={<BlogPost />} />
                 </Routes>
             </BrowserRouter>
             

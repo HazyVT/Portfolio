@@ -20,6 +20,10 @@ const theme = extendTheme({
         'link': {
             'light': '#04a5e5',
             'dark': '#99d1db'
+        },
+        'overlay': {
+            'light': '#ccd0da',
+            'dark': '#414559'
         }
     }
 })
